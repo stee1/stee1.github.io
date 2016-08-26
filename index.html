@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,12 +22,79 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<h1>Hello, world!</h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
+
+<div class="container-fluid">
+    <div class="row" id="header">
+        <h1 class=" text-center text-uppercase">Hello, world!</h1>
+    </div>
+</div>
+
+<nav class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="200">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#myNavBar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#section1">Part 1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#section2">Part 2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Part 3 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#section31">Part 3.1</a></li>
+                        <li><a href="#section32">Part 3.2</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#section33">Part 3 conclusion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="section1">
+        <p>This is part1</p>
+    </div>
+    <div id="section2">
+        <p>This is part2</p>
+    </div>
+    <div id="section3">
+        <p>This is part3</p>
+
+        <div id="section31">
+            <p>This is part 3.1</p>
+        </div>
+        <div id="section32">
+            <p>This is part 3.2</p>
+        </div>
+        <div id="section33">
+            <p>This is part 3 conclusion</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row" id="footer">
+        <h1 class="text-center text-uppercase">Goodbye, world!</h1>
+    </div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 </html>

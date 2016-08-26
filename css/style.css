@@ -1,0 +1,72 @@
+/*affix*/
+body {
+    position: relative;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+/*my styles*/
+#header {
+    height: 200px;
+    background: #6633ff;
+}
+
+#footer {
+    height: 200px;
+    background: #9933CC;
+}
+
+h1 {
+    padding-top: 60px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section1, #section2, #section3 {
+    height: 1000px;
+    border-radius: 5px;
+    padding: 50px 10px 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#section31, #section32, #section33 {
+    height: 250px;
+    padding: 50px 5px 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+#section1 {
+    background: #cc00cc;
+}
+
+#section2 {
+    background: #ff9999;
+}
+
+#section3 {
+    background: #ffff00;
+}
+
+#section31 {
+    background: #00ff00;
+}
+
+#section32 {
+    background: #00ff66;
+}
+
+#section33 {
+    background: #ffcc66;
+}
